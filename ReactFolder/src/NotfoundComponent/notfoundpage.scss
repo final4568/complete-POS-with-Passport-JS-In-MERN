@@ -1,0 +1,25 @@
+.notfound {
+  text-align: center;
+  padding-top: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  h1 {
+    font-size: 130px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    padding: 10px 40px 10px 40px;
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  button:hover {
+    background-color: rgb(255, 108, 108);
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+  }
+}

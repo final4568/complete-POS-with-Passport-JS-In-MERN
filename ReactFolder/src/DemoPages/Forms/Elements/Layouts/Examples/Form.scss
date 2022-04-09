@@ -1,0 +1,186 @@
+$black-color: #444;
+@mixin msgWith($value) {
+  width: $value;
+}
+@mixin Errmsg() {
+  background: rgb(214, 10, 10);
+  color: #fff9;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
+
+@mixin Successmsg() {
+  background: rgb(9, 158, 54);
+  color: #fff9;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
+
+.login_page {
+  max-width: 500px;
+  margin: auto;
+  color: $black-color;
+  padding: 0 15px;
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  margin-top: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 20px 0;
+    letter-spacing: 1.5px;
+  }
+  input {
+    width: 95%;
+    height: 45px;
+    margin: 10px 0;
+    border: 2px solid #777;
+    outline: none;
+    padding: 0 10px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    .submit_btn {
+      margin-left: 12px;
+      margin-top: 10px;
+      background-color: #545cd8;
+      width: 90%;
+    }
+    .forgetpass {
+      margin: 10px;
+      color: crimson;
+      margin-left: -1px;
+    }
+    :hover {
+      font-weight: 500;
+    }
+    button {
+      width: 150px;
+      padding: 10px 0;
+      color: white;
+      background: black;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-right: 10px;
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: $black-color;
+    }
+  }
+  .registerbtn {
+    margin-top: 20px;
+    a:hover {
+      font-weight: 700;
+    }
+  }
+}
+.errMsgReg {
+  @include msgWith(100%);
+  @include Errmsg();
+}
+.successMsgReg {
+  @include msgWith(100%);
+  @include Errmsg();
+}
+.errMsg {
+  @include msgWith(95%);
+  @include Errmsg();
+}
+
+.successMsg {
+  @include msgWith(95%);
+  @include Successmsg();
+}
+.btn_back {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  .back2Hom_htm {
+    background-color: rgb(9, 158, 54);
+    padding: 20px 40px 20px 40px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    float: right;
+    border: none;
+    border-radius: 5px;
+  }
+  :hover {
+    background-color: rgb(5, 131, 43);
+    cursor: pointer;
+  }
+}
+
+// Forget Password css
+.fg_pass {
+  border: 1px solid rgba(128, 128, 128, 0.274);
+  max-width: 500px;
+  margin: 0% auto;
+  box-sizing: border-box;
+  padding-right: 30px;
+  margin-top: 50px;
+  h2 {
+    color: #555;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0;
+    letter-spacing: 1.3px;
+  }
+  .row {
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+
+    input {
+      width: 93%;
+      height: 45px;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 0 15px;
+      border-radius: 3px;
+      margin: 5px 0;
+    }
+    button {
+      background: #333;
+      color: white;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      border-radius: 3px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.login_page .hr {
+  margin: 15px 0;
+  color: crimson;
+}
+
+.login_page .social button {
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 1.3px;
+  box-shadow: 0 2px 4px #777;
+}
+
+.linkClass {
+  color: #fff;
+}
+.linkClass:hover {
+  color: red;
+}
